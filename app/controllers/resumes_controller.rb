@@ -1,12 +1,12 @@
 class ResumesController < ApplicationController
-	include Write_to_pdf	
+	include WriteToPdf
 	http_basic_authenticate_with name: "akash", password: "akash", except: [:index, :show]
 	def new
 		@resume = Resume.new
 	end
 
 	def index
-			@resumes = Resume.all
+		@resumes = Resume.all
 	end
 	def show
 		@resume = Resume.find(params[:id])
@@ -16,11 +16,9 @@ class ResumesController < ApplicationController
 		@resume = Resume.find(params[:id])
 	end
 	def write
-		if @resume.nil?
-			writing(@resume)
-		else
-			print "error"
-		end		
+	    @resume = Resume.find(10)
+		writing(@resume)
+		render 'write'	
 	end
 	def create
 		 @resume = Resume.new(resume_params)

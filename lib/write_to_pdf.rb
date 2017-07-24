@@ -1,14 +1,12 @@
-module Write_to_pdf
-    def writing(details)
+module WriteToPdf
+    def writing(resume)
     	require 'prawn'
     	begin
-            puts details["name"]
-    		content ="Name \t\t: #{details["name"]}\n\nEmail \t\t: #{details["email"]}\n\nPhone Number \t: #{details["phone"]}\n\nDescription\t: #{details["description"]}\n"  
+    		content ="Name \t\t: #{resume["name"]}\n\nEmail \t\t: #{resume["email"]}\n\nPhone Number \t: #{resume["phone"]}\n\nDescription\t: #{resume["description"]}\n"  
     		pdf = Prawn::Document.new
     		pdf.text content
-    		pdf.render_file details["name"].to_s + (".pdf")
-    		sleep(0.8)
-    		puts "Content written successfully to Pdf File #{details["name"]}.pdf"
+    		pdf.render_file resume["name"].to_s + ".pdf"
+    		puts "Content written successfully to Pdf File #{resume["name"]}.pdf"
     	rescue IOError => e
     		"some error occur, dir not writable."
     	end
