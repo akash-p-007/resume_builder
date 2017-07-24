@@ -1,0 +1,21 @@
+<p>
+  <strong>Name:</strong>
+  <%= @resume.name %>
+</p>
+ 
+<p>
+  <strong>Email:</strong>
+  <%= @resume.email %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%= @resume.phone %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @resume.description %>
+</p>
+<%= link_to "<button class='button-secondary'>Edit Resume</button>".html_safe, edit_resume_path(@resume) %> 
+<%= link_to "<button class='button-secondary'>Back to List</button>".html_safe, resumes_path %>
+ <%= link_to "<button class='button-secondary'>Download Resume</button>".html_safe, write_resumes_path(@resume) %>

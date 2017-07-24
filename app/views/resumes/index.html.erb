@@ -1,0 +1,22 @@
+<%= link_to "<button class='button-secondary'>Click to Add your Resume</button>".html_safe,new_resume_path%>
+<h1>Listing Resumes</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+  </tr>
+ 
+  <% @resumes.each do |resume| %>
+    <tr>
+      <td><%= resume.name %></td>
+      <td><%= resume.phone %></td>
+      <td><%= link_to "<button class='button-secondary'>Show Details</button>".html_safe, resume_path(resume) %></td>
+      <td><%= link_to "<button class='button-secondary'>Edit Details</button>".html_safe, edit_resume_path(resume) %></td>
+      <td><%= link_to "<button class='button-secondary'>Delete Resume</button>".html_safe, resume_path(resume),
+              method: :delete
+               %></td>     
+    </tr>
+  <% end %>
+</table>
+<%= link_to "<button class='button'>Back to Home</button>".html_safe ,root_path %>

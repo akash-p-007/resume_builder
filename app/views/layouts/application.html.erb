@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ResumeBuilder</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header">
+  	<ul>
+  	<img src="/logo.png">
+		  <li><a class="active" href="#"><b>Home</b></a></li>
+		  <li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn">About Us</a>
+		    <div class="dropdown-content">
+		      <a href="#">Our Team</a>
+		    </div>
+		    <li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+		    <div class="dropdown-content">
+		      <a href="#">Email</a>
+		    </div>
+		  </li>
+		 
+	</ul>
+		
+</div>
+
+<%= yield %>
+
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<p>© 2017 Job Appliaction Portal&nbsp<img src="/playstore.png" class="footerimg"><img src="/facebook.png" class="footerimg"><img src="/insta.jpg" class="footerimg"></p>
+		
+	</footer>
+</body>
+
+</html>

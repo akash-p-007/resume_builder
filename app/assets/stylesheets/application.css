@@ -1,0 +1,223 @@
+  /*
+  * This is a manifest file that'll be compiled into application.css, which will include all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any styles
+  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+  * file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
+
+  table{
+  text-decoration-line: none;
+  padding: 20px;
+  margin: 20px;
+  align-content: center;
+  margin-left: 10%;
+  margin-top: 20px;
+  }
+  tr{
+  line-height: 1.5;
+  }
+  .heading{
+  text-align: right;
+  }
+  .content{
+  text-align: left;
+  z-index: -1;
+  position: absolute;
+  }
+  h1{
+  padding-top: 20px;
+  padding-bottom: -10px;
+  text-align:  center;
+  padding-left: 70px;
+  }
+  .button {
+  background-color: #333; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 46%;
+  }
+
+  .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  }
+
+  input{
+  border-radius: 15px;
+  box-shadow: 0 1px 0 #ccc inset;
+  height: 20px;
+  }
+  textarea{
+  border-radius: 20px;
+  box-shadow: 0 1px 0 #ccc inset;
+  }
+  input:focus { 
+
+  background-color: black;
+  color:white;
+  box-shadow: 0 1px 0 #ccc inset;
+  }
+
+  .header{
+  background-color: #333;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  }
+
+  li {
+  display:inline-block;
+  }
+
+  li a {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 2   0%;
+  }
+
+  li a:hover {
+  background-color: #111;
+  }
+  .site-footer {
+  margin-top: 50px;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  background: #333;
+  font-size: 90%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  a:link{
+  color: white;
+  }
+  li.dropdown {
+  display: inline-block;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: .5;
+  }
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1
+  }
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+
+  }
+  li a:hover {
+  background-color: #333;
+  }
+  div img
+  {
+  position: relative;
+  float: right;
+  background-position: right;
+  margin-right: 0;
+  width:18%;
+  /*display: inline-block;*/
+  }
+  .footerimg{
+  height: 50px;
+  width: 80px;
+  display: inline;
+  }
+  .logo{
+  position: absolute;
+  align-content: right;
+  display: inline-block;
+  }
+  h1 {
+  position: relative;
+  text-align: center;
+  }
+
+  h1 span {
+  background: #fff;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+  }
+
+
+  h1:before {
+  left: 0;
+  }
+  #form{
+  text-align: center;
+  }
+  .button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    margin-left: 10%
+    padding:0;
+  }
+  .button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+  }    
+  #error_explanation {
+  color: #f00;
+  ul {
+  list-style: none;
+  margin: 0 0 18px 0;
+  }
+  }
+  .field_with_errors label,
+  .field_with_errors .form-control-feedback,
+  .field_with_errors .form-control-label,
+  .field_with_errors .col-form-label,
+  .field_with_errors .form-check-label,
+  .field_with_errors .custom-control {
+  color: #d9534f;
+}
+
+.field_with_errors .form-control {
+  border-color: #d9534f;
+}
+
+.field_with_errors .input-group-addon {
+  color: #d9534f;
+  border-color: #d9534f;
+  background-color: #fdf7f7;
+}
+
